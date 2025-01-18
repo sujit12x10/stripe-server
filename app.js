@@ -43,6 +43,8 @@ app.get("/", (req, res) => {
     res.status(200).send("Hello form the vercel")
 })
 
-app.listen(7000, () => {
+const port = process.env.PORT || 7000
+
+app.listen(port, () => {
     console.log("server started")
 })
